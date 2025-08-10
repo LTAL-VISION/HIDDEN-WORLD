@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hidden Gems of the World</title>
+  <meta name="description" content="Entdecke Länder abseits des Mainstreams – Natur, Kultur, echte Geheimtipps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="#">Hidden<span>World</span></a>
+      <ul class="nav__links">
+        <li><a href="#grid">Orte</a></li>
+        <li><a href="#about">Idee</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Abseits des Mainstreams: <span class="accent">Länder</span>, die mich überraschen.</h1>
+        <p>Kuratiert, kompakt, inspirierend. Heute starte ich mit drei Ländern – die Liste wächst wöchentlich.</p>
+        <a class="btn" href="#grid">Entdecken</a>
+      </div>
+      <div class="hero__img">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop"
+             alt="Berglandschaft als Titelbild">
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <!-- Länder-Grid -->
+    <section id="grid" class="section">
+      <h2>Hidden Gems – Erste Auswahl</h2>
+      <div class="grid">
+        <!-- Bhutan -->
+        <article class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop" alt="Bhutan Kloster am Felsen">
+          <div class="card__body">
+            <h3>Bhutan</h3>
+            <p>Himalaya-Königreich mit Glücksindex, Klöstern & dramatischer Natur. Limitierter Tourismus, authentische Kultur.</p>
+            <ul class="tags">
+              <li>Himalaya</li><li>Kultur</li><li>Trekking</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Kiribati -->
+        <article class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop" alt="Tropische Lagune Kiribati">
+          <div class="card__body">
+            <h3>Kiribati</h3>
+            <p>Weit verstreuter Inselstaat im Pazifik: Lagunen, Tauchen, pure Ruhe. Ein echter „weit weg“-Traum.</p>
+            <ul class="tags">
+              <li>Pazifik</li><li>Tauchen</li><li>Inseln</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Lesotho -->
+        <article class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Bergplateau in Lesotho">
+          <div class="card__body">
+            <h3>Lesotho</h3>
+            <p>„Königreich im Himmel“ – ein ganzes Land über 1.000 m. Bergpässe, Reiten, klare Luft, wenig Tourismus.</p>
+            <ul class="tags">
+              <li>Berge</li><li>Afrika</li><li>Roadtrip</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Idee -->
+    <section id="about" class="section about">
+      <h2>Die Idee</h2>
+      <p>Kurze, ehrliche Portraits von Ländern, die selten auf den üblichen Listen stehen. Fokus: Natur, Kultur, Einzigartigkeit. 
+      Später kommen Filter (Preis, Klima, Saison) und Detailseiten dazu.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Hidden Gems. Diese Seite wächst – jede Woche neue Länder.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
